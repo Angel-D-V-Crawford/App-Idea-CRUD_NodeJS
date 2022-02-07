@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <title>App Ideas</title>
+
+    </head>
+
+    <body>
+
+        <div class="header">
+
+            <h1>App Ideas</h1>
+
+        </div>
+
+        <div class="content">
+            
+            <div class="add">
+
+                <a class="circle-button" href="/app_idea">
+                    <span class="material-icons">add</span>
+                </a>
+
+            </div>
+
+            <div class="table">
+
+                <table>
+                    <tr>
+                        <th>Idea</th> <th>Difficulty</th> <th colspan="2">Options</th>
+                    </tr>
+                    <% if(ideaRows != null) { %>
+
+                        <% ideaRows.forEach( (item) => { %>
+
+                            <tr>
+                                <!-- <td><%= item.idea %></td> -->
+                                <td><a href="/app_idea/show/<%= item._id %>"><%= item.idea %></a></td>
+                                <td><%= item.difficulty %></td>
+                                <td>
+                                    <a class="circle-button" href="/app_idea/<%= item._id %>">
+                                        <span class='material-icons edit-span'>edit</span>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a class="circle-button" href="/app_idea/delete/<%= item._id %>">
+                                        <span class='material-icons'>delete</span>
+                                    </a>
+                                </td>
+                            </tr>
+
+                        <% }) %>
+
+                    <% } %>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </body>
+
+</html>

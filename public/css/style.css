@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    color: #B6FF85;
+    background: linear-gradient(120deg, #3E32A8, #29ff7b);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+a {
+    color: #B6FF85;
+    font-weight: bold;
+    text-decoration: none;
+    transition-duration: 0.3s;
+}
+
+a:hover {
+    color: #292929;
+}
+
+.header {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #292929;
+}
+
+.items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.form {
+    width: 100%;
+}
+
+.app-info {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    color: #B6FF85;
+    background-color: transparent;
+    border: 3px solid #29292980;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.app-info label {
+    color: #292929;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+input[type=text], textarea, select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    color: #B6FF85;
+    font-weight: bold;
+    background-color: transparent;
+    border: 3px solid #29292980;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+select * {
+    background-color: #29292980;
+}
+
+.circle-button {
+    display: inline-block;
+    background-color: #29292980;
+	color: #B6FF85;
+    text-decoration: none;
+	justify-content: center;
+	align-items: center;
+    text-align: center;
+	border: 3px solid #B6FF85;
+	border-radius: 50%;
+    min-width: 20px;
+    min-height: 20px;
+    line-height: 1;
+    box-sizing: content-box;
+    white-space: nowrap;
+	transition-duration: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 0px 15px 0px;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding: 0;
+}
+
+.circle-button span {
+    font-size: 1.8em;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.circle-button:hover {
+	background: #B6FF85;
+	color: #292929;
+    cursor: pointer;
+}
+
+.edit-span {
+	transform: scale(0.8);
+}
+
+button {
+    font-size: 1.3rem;
+}
+
+.content {
+    justify-content: center;
+    text-align: center;
+}
+
+.table {
+    margin-top: 30px;
+}
+
+.table table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
+}
+
+th {
+    color: #292929;
+    background-color: #B6FF85;
+    padding: 15px;
+    text-align: left;
+}
+
+td {
+    padding: 15px;
+    text-align: left;
+    background-color: #29292980;
+    border-bottom: 2px solid #B6FF85;
+}

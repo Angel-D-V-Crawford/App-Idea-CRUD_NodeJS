@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="UTF-8">   
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <title>App Idea</title>
+
+    </head>
+
+    <body>
+
+        <% if(ideaInfo != null) { %>
+
+            <% ideaInfo.forEach( (item) => { %>
+
+                <div class="header">
+
+                    <h1><%= item.idea %></h1>
+        
+                </div>
+        
+                <div class="app-info">
+                    
+                    <label for="idea">Idea: </label>
+                    <p id="idea">
+                        <%= item.idea %>
+                    </p>
+
+                    <label for="description">Description:</label>
+                    <p id="description">
+                        <%= item.description %>
+                    </p>
+
+                    <label for="requirements">Requirements:</label>
+                    <p id="requirements">
+                        <%= item.requirements %>
+                    </p>
+
+                    <label for="languages">Programming Language(s): </label>
+                    <p id="languages">
+                        <%= item.languages %>
+                    </p>
+
+                    <label for="frameworks">Framework(s) (Optional): </label>
+                    <p id="frameworks">
+                        <% if(item.frameworks != '') { %>
+                            <%= item.frameworks %>
+                        <% } else { %>
+                            No framework.
+                        <% } %>
+                    </p>
+
+                    <label for="difficulty">Difficulty:</label>
+                    <p id="difficulty">
+                        <%= item.difficulty %>
+                    </p>
+
+                </div>
+
+                <a class="circle-button" href="../../">
+                    <span class="material-icons">arrow_back</span>
+                </a>
+
+            <% }) %>
+
+        <% } %>
+
+    </body>
+
+</html>
