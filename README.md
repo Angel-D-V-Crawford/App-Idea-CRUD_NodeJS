@@ -24,3 +24,5 @@ Enjoy!
 - Fast Usage.
 
 ## Screenshots
+![Screenshot](./media/main-page.png)
+![Screenshot](./media/form.png)
