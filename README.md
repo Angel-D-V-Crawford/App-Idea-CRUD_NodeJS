@@ -21,7 +21,7 @@ Enjoy!
 - Put your app idea and save it on this web application.
 - Data displaying on a table.
 - Elegant UI.
-- Fast Usage.
+- Simple and fast usage.
 
 ## Screenshots
 ![Screenshot](./media/main-page.png)
