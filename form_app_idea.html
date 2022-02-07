@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="UTF-8">   
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <title>Add App Idea</title>
+
+    </head>
+
+    <body>
+
+        <div class="header">
+
+            <h1>Add App Idea</h1>
+
+        </div>
+
+        <div class="items">
+            
+            <form class="form" method="post" action="../">
+                <label for="idea">Idea: </label> 
+                <input type="text" id="idea" name="idea" required>
+
+                <label for="description">Description:</label> 
+                <textarea id="description" name="description" rows="5" required></textarea>
+
+                <label for="requirements">Requirements:</label> 
+                <textarea id="requirements" name="requirements" rows="5" required></textarea>
+
+                <label for="languages">Programming Language(s): </label> 
+                <input type="text" id="languages" name="languages" required>
+
+                <label for="frameworks">Framework(s) (Optional): </label> 
+                <input type="text" id="frameworks" name="frameworks">
+
+                <label for="difficulty">Difficulty:</label>
+                <select id="difficulty" name="difficulty">
+                    <option value="Beginner" selected>Beginner</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Advanced">Advanced</option>
+                </select>
+
+                <a class="circle-button" href="../">
+                    <span class="material-icons">arrow_back</span>
+                </a>
+                <button type="submit" class="circle-button">
+                    <span class="material-icons">check</span>
+                </button>
+            </form>
+
+        </div>
+
+    </body>
+
+</html>
