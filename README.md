@@ -15,7 +15,7 @@ Use the next command on root project's directory to start the server:
 nodemon server.js
 ```
 
-Enjoy!
+Go to localhost:3000 on browser and enjoy!
 
 ## Features
 - Put your app idea and save it on this web application.
