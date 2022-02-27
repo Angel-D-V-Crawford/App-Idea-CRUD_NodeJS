@@ -52,6 +52,9 @@ app.post('/:id', (req, res) => {
 
 app.use('/app_idea', appIdeasRouter);
 
-app.listen(3000, () => {
+const port = process.env.PORT || 3000;
+const host = process.env.HOST || '0.0.0.0';
+
+app.listen(port, host, () => {
     console.log('Server started at port 3000');
 });
