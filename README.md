@@ -8,11 +8,12 @@ Use these commands to install the necessary dependencies:
 npm i mongoose
 npm i express
 npm i ejs
+npm i dotenv
 npm install -g nodemon
 ```
 Use the next command on root project's directory to start the server:
 ```
-nodemon server.js
+npm run dev
 ```
 
 Go to localhost:3000 on browser and enjoy!
